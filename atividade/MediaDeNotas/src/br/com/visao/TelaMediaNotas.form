@@ -28,7 +28,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jTnota1" max="32767" attributes="0"/>
@@ -41,6 +41,10 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                      <Component id="jBcalcular" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLmaiormedia" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -48,12 +52,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLmediadaturma" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
-                      <Component id="jBcalcular" min="-2" max="-2" attributes="0"/>
-                  </Group>
               </Group>
-              <EmptySpace pref="163" max="32767" attributes="0"/>
+              <EmptySpace pref="171" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -67,16 +67,16 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTnota2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTnota2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="62" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
               <Component id="jBcalcular" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <EmptySpace pref="41" max="32767" attributes="0"/>
               <Component id="jLmaiormedia" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Component id="jLmediadaturma" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -84,24 +84,21 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nota 1:"/>
+        <Property name="text" type="java.lang.String" value="Nota 1"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nota 2:"/>
+        <Property name="text" type="java.lang.String" value="Nota 2"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTnota1">
     </Component>
     <Component class="javax.swing.JTextField" name="jTnota2">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTnota2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBcalcular">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Efetuat C&#xe1;lculos"/>
+        <Property name="text" type="java.lang.String" value="Efetuar c&#xe1;lculos"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBcalcularActionPerformed"/>
@@ -109,12 +106,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLmaiormedia">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Maior m&#xe9;dia: 0.00"/>
+        <Property name="text" type="java.lang.String" value="Maior m&#xe9;dia"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLmediadaturma">
       <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe9;dia da turma: 0.00"/>
+        <Property name="text" type="java.lang.String" value="M&#xe9;dia da turma"/>
       </Properties>
     </Component>
   </SubComponents>

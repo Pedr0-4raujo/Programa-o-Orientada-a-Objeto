@@ -1,18 +1,15 @@
-package br.com.visao;
-
-import br.com.controle.CalcularMedia;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
+package br.com.visao;
+import br.com.controle.CalcularMedia;
 /**
  *
  * @author Pedro
  */
 public class TelaMediaNotas extends javax.swing.JFrame {
         private CalcularMedia m = new CalcularMedia();
-    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaMediaNotas.class.getName());
 
     /**
@@ -41,18 +38,16 @@ public class TelaMediaNotas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Nota 1:");
+        jLabel1.setText("Nota 1");
 
-        jLabel2.setText("Nota 2:");
+        jLabel2.setText("Nota 2");
 
-        jTnota2.addActionListener(this::jTnota2ActionPerformed);
-
-        jBcalcular.setText("Efetuat Cálculos");
+        jBcalcular.setText("Efetuar cálculos");
         jBcalcular.addActionListener(this::jBcalcularActionPerformed);
 
-        jLmaiormedia.setText("Maior média: 0.00");
+        jLmaiormedia.setText("Maior média");
 
-        jLmediadaturma.setText("Média da turma: 0.00");
+        jLmediadaturma.setText("Média da turma");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -72,15 +67,15 @@ public class TelaMediaNotas extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTnota2))))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(116, 116, 116)
+                        .addComponent(jBcalcular))
+                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLmaiormedia))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLmediadaturma))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addComponent(jBcalcular)))
-                .addContainerGap(163, Short.MAX_VALUE))
+                        .addComponent(jLmediadaturma)))
+                .addContainerGap(171, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,15 +86,15 @@ public class TelaMediaNotas extends javax.swing.JFrame {
                     .addComponent(jTnota1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTnota2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                    .addComponent(jLabel2)
+                    .addComponent(jTnota2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(74, 74, 74)
                 .addComponent(jBcalcular)
-                .addGap(57, 57, 57)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(jLmaiormedia)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(jLmediadaturma)
-                .addGap(52, 52, 52))
+                .addGap(45, 45, 45))
         );
 
         pack();
@@ -111,15 +106,11 @@ public class TelaMediaNotas extends javax.swing.JFrame {
         m.setValor2(Double.valueOf(jTnota2.getText()));
         m.somaDasNotas();
         m.mediaDasNotas();
-        jLmaiormedia.setText("Maior média: %.2f" + m.getMaiorMedia());
-        jLmediadaturma.setText("Média da turma: %.2f" + m.mediaDaTurma());
+        jLmaiormedia.setText("Maior média: " + m.getMaiorMedia());
+        jLmediadaturma.setText("Média da turma: " + m.mediaDaTurma());
         jTnota1.setText("");
         jTnota2.setText("");
     }//GEN-LAST:event_jBcalcularActionPerformed
-
-    private void jTnota2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTnota2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTnota2ActionPerformed
 
     /**
      * @param args the command line arguments
